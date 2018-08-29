@@ -74,7 +74,8 @@ if ${use_color} ; then
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
-
+  alias kk='sl -F'
+	alias l='sl'
 	alias ll='ls -aFl'
 	alias ls='ls --color=auto'
 	alias grep='grep --colour=auto'
@@ -147,7 +148,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /bin/virtualenvwrapper.sh
 
-#colors
+#sets colors
         RED="\[\033[0;31m\]"
      YELLOW="\[\033[1;33m\]"
       GREEN="\[\033[0;32m\]"
@@ -179,3 +180,8 @@ function set_bash(){
 }
 
 set_bash
+
+#Bash insult
+if [ -f $HOME/bash-insulter/src/bash.command-not-found ]; then
+    source $HOME/bash-insulter/src/bash.command-not-found
+fi
