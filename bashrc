@@ -176,7 +176,7 @@ LIGHT_GREEN="\[\033[1;32m\]"
 #sets bash with git and virtualenv
 function set_bash(){
   set_virtualenv
-	PS1='\[\033[1;34m\]${PYTHON_VIRTUALENV}\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]$ \[\033[1;31m\]$(git_branch_name)\[\033[m\]'
+	PS1='\[\033[1;34m\]${PYTHON_VIRTUALENV}\[\033[01;36m\][\u@\h\[\033[01;37m\] \W\[\033[01;36m\]]$ \[\033[1;31m\]$(git_branch_name)\[\033[m\]'
 }
 
 set_bash
