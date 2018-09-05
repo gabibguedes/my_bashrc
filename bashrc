@@ -74,7 +74,8 @@ if ${use_color} ; then
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
-  alias kk='sl -F'
+
+  alias kk='ls -1aF'
 	alias l='sl'
 	alias ll='ls -aFl'
 	alias ls='ls --color=auto'
@@ -183,5 +184,5 @@ set_bash
 
 #Bash insult
 if [ -f $HOME/bash-insulter/src/bash.command-not-found ]; then
-    source $HOME/bash-insulter/src/bash.command-not-found
+    source $HOME/Documentos/codigos/bash-insulter/src/bash.command-not-found
 fi
